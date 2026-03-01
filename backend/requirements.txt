@@ -1,0 +1,50 @@
+# Web Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+websockets>=12.0
+
+# Database
+sqlalchemy>=2.0.0
+asyncpg>=0.29.0
+alembic>=1.12.0
+redis>=5.0.0
+qdrant-client>=1.6.0
+neo4j>=5.0.0
+
+# ML & AI
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.35.0
+sentence-transformers>=2.2.0
+librosa>=0.10.0
+torchaudio>=2.0.0
+Pillow>=10.0.0
+opencv-python>=4.8.0
+onnx>=1.14.0
+onnxruntime>=1.16.0
+tensorboard>=2.14.0
+
+# LLM
+ollama>=0.1.0
+groq>=0.4.0
+langchain>=0.1.0
+chromadb>=0.4.0
+
+# Security
+passlib[bcrypt]>=1.7.4
+python-jose[cryptography]>=3.3.0
+
+# Task Queue
+celery>=5.3.0
+
+# Privacy
+presidio-analyzer>=2.2.0
+presidio-anonymizer>=2.2.0
+
+# Utilities
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+python-dotenv>=1.0.0
+httpx>=0.25.0
+numpy>=1.24.0

@@ -1,0 +1,75 @@
+name: "🐛 Bug Report"
+description: "Report a reproducible bug in EmpathEase"
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out a bug report!
+
+  - type: input
+    id: summary
+    attributes:
+      label: "Summary"
+      description: "A short, clear description of the bug"
+      placeholder: "Vocal emotion meter shows 0% even with valid audio input"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Exact steps to reproduce the bug"
+      placeholder: |
+        1. Start a session
+        2. Speak into the microphone
+        3. Observe the vocal emotion meter
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Behaviour"
+      placeholder: "Vocal emotion meter should display detected emotion scores"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual Behaviour"
+      placeholder: "Meter stays at 0% regardless of audio input"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: "Affected Component"
+      multiple: true
+      options:
+        - "Frontend (React/Vite)"
+        - "Backend API (FastAPI)"
+        - "Facial Affect (ML)"
+        - "Text Emotion (ML)"
+        - "Vocal Prosody (ML)"
+        - "Fusion Engine"
+        - "WebSocket"
+        - "LLM / Chat"
+        - "STT / TTS (Sarvam)"
+        - "Other"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Relevant Logs / Screenshots"
+      description: "Paste any relevant console or server logs"
+      render: shell
+
+  - type: input
+    id: env
+    attributes:
+      label: "Environment"
+      placeholder: "OS: Windows 11, Python: 3.11.8, Browser: Chrome 122"

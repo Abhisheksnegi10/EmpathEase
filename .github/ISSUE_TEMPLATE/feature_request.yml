@@ -1,0 +1,42 @@
+name: "✨ Feature Request"
+description: "Suggest a new feature or improvement"
+labels: ["enhancement"]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: "Feature Summary"
+      placeholder: "Add multilingual emotion label support"
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Motivation / Problem"
+      description: "What problem does this feature solve?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Proposed Solution"
+      description: "How do you envision this being implemented?"
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: "Relevant Component"
+      multiple: true
+      options:
+        - "Frontend (React/Vite)"
+        - "Backend API (FastAPI)"
+        - "Facial Affect (ML)"
+        - "Text Emotion (ML)"
+        - "Vocal Prosody (ML)"
+        - "Fusion Engine"
+        - "LLM / Chat"
+        - "STT / TTS"
+        - "Infrastructure"
+        - "Other"

@@ -1,0 +1,42 @@
+{
+  "model_path": "d:\\EmpathEase v1\\backend\\training\\text_emotion\\..\\..\\outputs\\text_emotion_v2\\best",
+  "total": 30,
+  "passed": 26,
+  "accuracy": 0.8667,
+  "gate_passed": true,
+  "single_turn_wrong_rate": 0.6667,
+  "failed_cases": [
+    {
+      "id": 13,
+      "current": "Mujhe nahi pata main theek hoon ya nahi.",
+      "expected": "sadness",
+      "got": "fear",
+      "confidence": 0.749,
+      "reasoning": "Epistemic uncertainty ('nahi pata theek hoon ya nahi') after conflict and no resolution -> grief."
+    },
+    {
+      "id": 20,
+      "current": "Main wahan baitha raha.",
+      "expected": "anger",
+      "got": "neutral",
+      "confidence": 0.71,
+      "reasoning": "Passive 'baitha raha' after credit theft reads as neutral. Context reveals frozen/suppressed anger."
+    },
+    {
+      "id": 22,
+      "current": "Unhone aaj call kiya aur bola proud hain mujhse.",
+      "expected": "surprise",
+      "got": "joy",
+      "confidence": 0.972,
+      "reasoning": "Positive news is expected to be joy. After explicitly establishing that this person never supports -> the dominant response is disbelief/surprise before joy."
+    },
+    {
+      "id": 30,
+      "current": "Raat ko neend nahi aati ab.",
+      "expected": "anger",
+      "got": "disgust",
+      "confidence": 0.689,
+      "reasoning": "Sleeplessness after deliberate betrayal ('jaante the aur phir bhi kiya') -> anger-driven rumination, not grief-driven sadness."
+    }
+  ]
+}
