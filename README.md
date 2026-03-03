@@ -19,7 +19,7 @@
 
 ## 📐 System Architecture
 
-[**👉 View the full interactive architecture diagram here**](./empathease_architecture.html)
+[**👉 View the full interactive architecture diagram here**](https://htmlpreview.github.io/?https://github.com/Abhisheksnegi10/EmpathEase/blob/main/empathease_architecture.html)
 
 The system is structured across 6 production layers:
 
